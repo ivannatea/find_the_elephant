@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<h1 style="position: absolute; margin-left: 15px;">ОЧКИ</h1>
+	<h1 class="score innerHTML score_text" style="position: absolute; margin-top: 50px; margin-left: 15px;">100</h1>
+	<div class="card1" style="background-image: url('jiraf.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 20%; margin-left: 40%;"></div>
+	<div class="card2" style="background-image: url('korova.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 9%; margin-left: 66%;"></div>
+	<div class="card3" style="background-image: url('zebra.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 40%; margin-left: 41%;"></div>
+	<div class="card4" style="background-image: url('lion.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 40%; margin-left: 5%;"></div>
+	<div class="card5" style="background-image: url('Antilop.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 17%; margin-left: 3%;"></div>
+	<div class="card6" style="background-image: url('nosorog.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 2%; margin-left: 38%;"></div>
+	<div class="card7" style="background-image: url('giena.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 27%; margin-left: 75%;"></div>
+	<div class="card8" style="background-image: url('begemot.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 42%; margin-left: 70%;"></div>
+	<div class="card9" style="background-image: url('elephant.jpg'); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 2%; margin-left: 12%;"></div>
+	<div class="vopros" style="display: none;">
+		<h2 style="position: absolute;margin-top: 15%; margin-left: 41%;">Где спрятана зебра?</h2>
+	</div>
+
+	<script type="text/javascript">
+		let score=100;
+		let y = function(){
+			document.querySelector(".vopros").style.display="block";
+		}
+		let x = function(){
+			document.querySelector(".card1").style.background = "black";
+			document.querySelector(".card2").style.background = "black";
+			document.querySelector(".card3").style.background = "black";
+			document.querySelector(".card4").style.background = "black";
+			document.querySelector(".card5").style.background = "black";
+			document.querySelector(".card6").style.background = "black";
+			document.querySelector(".card7").style.background = "black";
+			document.querySelector(".card8").style.background = "black";
+			document.querySelector(".card9").style.background = "black";
+		}
+		setTimeout(x,3000);
+		setTimeout(y,3000);
+		document.querySelector(".card1").onclick=function(){
+			document.querySelector(".card1").style.backgroundImage = "url('jiraf.jpg')";
+			document.querySelector(".card1").style.backgroundSize = "100% 100%";
+			score=score-10
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+		document.querySelector(".card2").onclick=function(){
+			document.querySelector(".card2").style.backgroundImage = "url('korova.jpg')";
+			document.querySelector(".card2").style.backgroundSize = "100% 100%";
+			score=score-10
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+		document.querySelector(".card3").onclick=function(){
+			document.querySelector(".card3").style.backgroundImage = "url('zebra.jpg')";
+			document.querySelector(".card3").style.backgroundSize = "100% 100%";
+			score=score+100
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+		document.querySelector(".card4").onclick=function(){
+			document.querySelector(".card4").style.backgroundImage = "url('lion.jpg')";
+			document.querySelector(".card4").style.backgroundSize = "100% 100%";
+			score=score-10
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+		document.querySelector(".card5").onclick=function(){
+			document.querySelector(".card5").style.backgroundImage = "url('Antilop.jpg')";
+			document.querySelector(".card5").style.backgroundSize = "100% 100%";
+			score=score-10
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+		document.querySelector(".card6").onclick=function(){
+			document.querySelector(".card6").style.backgroundImage = "url('nosorog.jpg')";
+			document.querySelector(".card6").style.backgroundSize = "100% 100%";
+			score=score-10
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+		document.querySelector(".card7").onclick=function(){
+			document.querySelector(".card7").style.backgroundImage = "url('giena.jpg')";
+			document.querySelector(".card7").style.backgroundSize = "100% 100%";
+			score=score-10
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+		document.querySelector(".card8").onclick=function(){
+			document.querySelector(".card8").style.backgroundImage = "url('begemot.jpg')";
+			document.querySelector(".card8").style.backgroundSize = "100% 100%";
+			score=score-10
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+		document.querySelector(".card9").onclick=function(){
+			document.querySelector(".card9").style.backgroundImage = "url('elephant.jpg')";
+			document.querySelector(".card9").style.backgroundSize = "100% 100%";
+			score=score-10
+			document.querySelector(".score_text").innerHTML = score ;
+		}
+	</script>
+</body>
+</html>
